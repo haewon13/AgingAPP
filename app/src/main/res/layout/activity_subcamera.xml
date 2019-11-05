@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorLight">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="17dp"
+            android:textColor="#FFFF"
+            android:text="변환 후를 보시려면 '결과보기'를 눌러주세요."/>
+
+
+        <ImageView
+            android:id="@+id/cap_result"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/bt_back"
+                 />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/result"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/bt_result"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보 수집 및 이용동의"
+            android:textStyle="bold"
+            android:textColor="#F9F8FC"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="이미지 변경을 위해 수집한 개인정보를 네트워크 성능 향상의 목적으로 이용하며,
+사용자의 이미지를 2년동안 보관 후 폐기합니다."
+            android:textColor="#F1EDFA"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  동의하고 시작하기  "/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

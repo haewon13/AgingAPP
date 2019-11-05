@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="young">
+        <item>5살</item>
+        <item>6살</item>
+        <item>7살</item>
+    </string-array>
+
+    <string-array name="now">
+        <item>16살</item>
+        <item>17살</item>
+        <item>18살</item>
+        <item>19살</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/main_background">
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="225dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/bt_menu1" />
+
+    <ImageView
+        android:id="@+id/compare"
+        android:layout_width="225dp"
+        android:layout_height="120dp"
+        android:src="@drawable/bt_menu2"
+        android:layout_marginBottom="60dp"/>
+
+</LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
