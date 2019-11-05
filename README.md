@@ -1,5 +1,6 @@
 # AgingApp
-<h2> '아이 사진관' Android Application  / 실종아동의 현재 나이 이미지 생성 및 찾기 프로젝트 (딥러닝 GAN 기반) </h2>
+<h2> '아이 사진관' Android Application </h2>
+<h3>/ 실종아동의 현재 나이 이미지 생성 및 찾기 프로젝트 (딥러닝 GAN 기반) </h3>
 <BR>
   <h3>폴더에 관한 설명입니다.</h3>
 
