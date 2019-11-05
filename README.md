@@ -22,8 +22,8 @@
 각 기능에 대한 예시 UI를 첨부하였다.<BR>
   <BR> # Intro, Menu, Tutorial<BR><BR> <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/intro.jpg" width="260" height="530">   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/main_menu.jpg" width="260" height="530">   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/tutorial.jpg" width="260" height="530"> <BR><BR>
     <BR> # Input with CustomAnimDialog, Output<BR><BR>
-      <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1_1.jpg" width="260" height="530">  <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1_2.jpg" width="260" height="530">
-  <BR>![title](UI/intro.jpg){: width="100" height="300") <BR>
+      <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1_1.jpg" width="260" height="530">  <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1_2.jpg" width="260" height="530"> <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/2_1.jpg" width="260" height="530">  <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/2_2.jpg" width="260" height="530">
+
     
   
 
