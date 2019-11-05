@@ -20,8 +20,11 @@
 - 5,6,7세의 사용자가 정면의 모습을 촬영하면 메인서버에서 IPCGAN을 거쳐 15~19세의 노화된 모습의 결과물을 받는 노화 카메라 기능<BR>
 - 5,6,7세의 모습과 15~19세의 모습, 총 2장의 사진을 첨부하여 변환된 모습과 실제 모습을 비교해볼 수 있는 기능<BR>
 각 기능에 대한 예시 UI를 첨부하였다.<BR>
-  <BR> # Intro, Menu, Tutorial<BR><BR> <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/intro.jpg" width="260" height="530">   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/main_menu.jpg" width="260" height="530">   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/tutorial.jpg" width="260" height="530"> <BR><BR>
-    <BR> # Input with CustomAnimDialog, Output<BR><BR>
+  <BR> # Intro, Menu, Tutorial<BR><BR>
+    <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/intro.jpg" width="260" height="530">   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/main_menu.jpg" width="260" height="530">   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/tutorial.jpg" width="260" height="530"> <BR><BR>
+    <BR> # Tutorial, Input <BR><BR>
+      <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/tutorial.jpg" width="260" height="530">  <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/3_1.jpg" width="260" height="530"><BR><BR>
+    <BR> # Generated Output<BR><BR>
        <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/3_1.jpg" width="260" height="530"> <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1_1.jpg" width="260" height="530">  <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1_2.jpg" width="260" height="530"> 
       <BR><img src="https://github.com/haewon13/AgingAPP/blob/master/UI/2_1.jpg" width="260" height="530">  <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/2_2.jpg" width="260" height="530">
 
