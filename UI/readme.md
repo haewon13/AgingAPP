@@ -1,1 +1,1 @@
-# UI images inside the AgingApp
+UI images inside the AgingApp
