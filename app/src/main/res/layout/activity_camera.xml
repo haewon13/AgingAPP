@@ -21,8 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:textSize="18dp"
             android:textColor="#FFFF"
             android:text="얼굴을 정면으로 촬영해주세요."/>
 
@@ -44,7 +44,7 @@
         android:orientation="horizontal"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="160dp"
         android:layout_marginBottom="15dp">
 
 
@@ -58,7 +58,6 @@
                 android:id="@+id/back"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_marginBottom="20dp"
                 android:src="@drawable/bt_back"
                 />
 
@@ -78,7 +77,6 @@
                 android:id="@+id/capture"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_marginBottom="20dp"
                 android:src="@drawable/bt_camera"
 
 

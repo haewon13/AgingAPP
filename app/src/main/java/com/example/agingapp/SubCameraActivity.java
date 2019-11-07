@@ -106,7 +106,6 @@ public class SubCameraActivity extends AppCompatActivity {
                             public void run() {
                                 customAnimationDialog = new CustomAnimationDialog(SubCameraActivity.this);
                                 customAnimationDialog.show();
-                                //customAnimationDialog.dismiss();
                             }
                         });
                         doFileUpload();
@@ -153,7 +152,7 @@ public class SubCameraActivity extends AppCompatActivity {
         uploadFilePath=imageFilePath;
         uploadFileName=imageFileName+".jpg";
 
-        Log.i("태그:",imageFileName);
+        Log.i("태그:","기능 1 FileInputStream:"+uploadFilePath);
 
         String sourceFileUri=uploadFilePath;
         File sourceFile = new File(sourceFileUri);
@@ -166,7 +165,7 @@ public class SubCameraActivity extends AppCompatActivity {
             Log.i("태그:","Source File exists.");
             try{
                 URL url = new URL("http://203.255.176.79:13000/updown.php");
-                //Log.i("태그:","http://203.255.176.79:14000/repos_camera/");
+                Log.i("태그:","http://203.255.176.79:13000/repos_camera/");
 
                 FileInputStream mFileInputStream = new FileInputStream(uploadFilePath);
                 String lineEnd = "\r\n";
@@ -232,8 +231,6 @@ public class SubCameraActivity extends AppCompatActivity {
 
 
                 }
-
-
                 dos.flush(); // finish upload...
                 dos.close();
 

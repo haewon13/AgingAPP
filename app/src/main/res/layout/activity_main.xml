@@ -14,7 +14,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/main_background">
+    android:background="@drawable/menu_back">
 
     <ImageView
         android:id="@+id/camera"

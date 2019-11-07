@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AgingAPP</string>
+    <string name="app_name">아이사진관</string>
     <string name="main_back_end">Press again to exit.</string>
     <string name="permission_error">권한이 없습니다.</string>
     <string name="title_activity_first_view">FirstViewActivity</string>

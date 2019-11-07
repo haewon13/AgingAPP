@@ -20,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:textSize="17dp"
+            android:layout_marginTop="50dp"
+            android:textSize="16dp"
             android:textColor="#FFFF"
             android:text="변환 후를 보시려면 '결과보기'를 눌러주세요."/>
 
@@ -45,7 +45,7 @@
         android:orientation="horizontal"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="160dp"
         android:layout_marginBottom="15dp">
 
         <LinearLayout

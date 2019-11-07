@@ -57,7 +57,7 @@ public class CompareActivity extends AppCompatActivity {
     String imageFileName2=null;
     DataOutputStream dos;
 
-    int serverResponse;
+    int serverResponse=0;
     int bufferSize;
     int maxBufferSize=1*1024*1024;
 
@@ -147,49 +147,119 @@ public class CompareActivity extends AppCompatActivity {
         });
     }
 
-
     private void doFileUpload(){
+
         uploadFilePath1=imageFilePath1;
         uploadFileName1=imageFileName1+".jpg";
 
         uploadFilePath2=imageFilePath2;
         uploadFileName2=imageFileName2+".jpg";
 
-        Log.i("태그:",uploadFileName1);
-        Log.i("태그:",uploadFileName2);
+        File sourceFile1 = new File(uploadFilePath1);
 
-        Log.i("태그:",uploadFilePath1);
-        Log.i("태그:",uploadFilePath2);
 
-        String charset = "UTF-8";
-        String requestURL="http://203.255.176.79:13000/updownalbum.php";
+        if(!sourceFile1.isFile()){
+            Log.e("태그:", "Source File not exist :" +sourceFile1);
+            return;
+        }
+        else{
+            Log.i("태그:","Source File exists.");
+            try{
+                URL url = new URL("http://203.255.176.79:13000/updown.php");
+                Log.i("태그:",uploadFileName1);
+                Log.i("태그:","http://203.255.176.79:13000/repos_camera/"+uploadFileName1);
 
-        try{
-            MultiUploader multipart = new MultiUploader(requestURL, charset);
-            multipart.addHeaderField("User-Agent", "CodeJava");
-            multipart.addHeaderField("Test-Header", "Header-Value");
+                FileInputStream mFileInputStream = new FileInputStream(uploadFilePath1);
+                Log.i("태그:","기능 2 FileInputStream:"+uploadFilePath1);
+                String lineEnd = "\r\n";
+                String twoHyphens = "--";
+                String boundary = "*****";
 
-           // multipart.addFormField("description", "Cool Pictures");
-            //multipart.addFormField("keywords", "Java,upload,Spring");
+                // open connection
+                HttpURLConnection con = (HttpURLConnection)url.openConnection();
+                con.setDoInput(true); //input 허용
+                con.setDoOutput(true);  // output 허용
+                con.setUseCaches(false);   // cache copy를 허용하지 않는다.
+                con.setRequestMethod("POST");
+                con.setRequestProperty("Connection", "Keep-Alive");
+                con.setRequestProperty("ENCTYPE","multipart/form-data");
+                con.setRequestProperty("Connection", "Keep-Alive");
+                con.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);
+                con.setRequestProperty("fileToUpload",uploadFilePath1);
 
-            multipart.addFilePart("fileToUpload","filename1","uploadFileName1","uploadFilePath1");
-            //multipart.addFilePart("fileToUpload2","filename2","uploadFileName2","uploadFilePath2");
+                // write data
+                dos = new DataOutputStream(con.getOutputStream());
+                Log.i("태그:", "Open OutputStream" );
+                dos.writeBytes(twoHyphens + boundary + lineEnd);
 
-            List<String> response = multipart.finish();
+                // 파일 전송시 파라메터명은 fileToUpload 파일명은 uploadFileName 설정하여 전송
+                dos.writeBytes("Content-Disposition: form-data; name=\"fileToUpload\";filename=\""+uploadFileName1+"\"" + lineEnd);
+                dos.writeBytes(lineEnd);
 
-            System.out.println("SERVER REPLIED:");
+                int bytesAvailable = mFileInputStream.available();
+                bufferSize=Math.min(bytesAvailable,maxBufferSize);
+                byte[] buffer=new byte[bufferSize];
+                int bytesRead = mFileInputStream.read(buffer,0,bufferSize);
+                while(bytesRead>0){
+                    dos.write(buffer,0,bufferSize);
+                    bytesAvailable = mFileInputStream.available();
+                    bufferSize=Math.min(bytesAvailable,maxBufferSize);
+                    bytesRead=mFileInputStream.read(buffer,0,bufferSize);
+                    dos.flush();
+                }
 
-            for (String line : response) {
-                System.out.println(line);
+                // send multipart form data necesssary after file data...
+                dos.writeBytes(lineEnd);
+                dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
+
+                serverResponse=con.getResponseCode();
+                if(serverResponse==0) Log.i("태그:","No HTTP return");
+                String serverMessage=con.getResponseMessage();
+
+
+                Log.i("태그:", "HTTP Response is : " + serverMessage + ": " + serverResponse);
+
+                if(serverResponse == HttpURLConnection.HTTP_OK){
+                    runOnUiThread(new Runnable() {
+
+                        public void run() {
+
+                            Intent intent = new Intent(CompareActivity.this, Result2Activity.class);
+
+                            intent.putExtra("name3_1",uploadFileName1);
+                            intent.putExtra("name3_2",uploadFileName2);
+                            intent.putExtra("image3",uploadFilePath2);
+                            startActivity(intent.addFlags(FLAG_ACTIVITY_NEW_TASK));
+                            customAnimationDialog2.dismiss();
+                            finish();
+
+
+                        }
+                    });
+
+
+                }
+                dos.flush(); // finish upload...
+                dos.close();
+
+            }catch(MalformedURLException e) {
+                Log.i("태그:", "exception " + e.getMessage());
+                // TODO: handle exception
+                e.printStackTrace();
+                Toast.makeText(CompareActivity.this, "MalformedURLException", Toast.LENGTH_SHORT).show();
+                Log.e("Upload file to server", "error: " + e.getMessage(), e);
+
+            }catch(Exception e2){
+                e2.printStackTrace();
+                Toast.makeText(CompareActivity.this, "Got Exception See logcat", Toast.LENGTH_SHORT).show();
+                Log.e("Upload server Exception", "Exception : "+ e2.getMessage(), e2);
+
             }
 
-
-        }catch(IOException ex){
-            System.err.println(ex);
         }
 
-
     }
+
 
 
 /*

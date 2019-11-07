@@ -22,23 +22,23 @@
             android:layout_marginTop="40dp"/>
 
         <FrameLayout
+            android:id="@+id/framelayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/result1"
-                android:layout_width="400dp"
+                android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:layout_marginLeft="5dp"
                 android:src="@drawable/result_character" />
 
             <ImageView
                 android:id="@+id/combine_result1"
-                android:layout_width="170dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginLeft="118dp"
                 android:layout_marginTop="36dp"
-                android:src="@drawable/young" />
+                android:src="@drawable/temp3" />
         </FrameLayout>
 
     </LinearLayout>
@@ -57,17 +57,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            >
 
             <ImageView
-                android:id="@+id/again"
+                android:id="@+id/save"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:src="@drawable/bt_back"
-                />
-
-
-
+                android:src="@drawable/bt_save" />
 
         </LinearLayout>
 
@@ -82,9 +79,8 @@
                 android:id="@+id/home"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
+                android:layout_marginLeft="15dp"
                 android:src="@drawable/bt_home" />
-
-
 
         </LinearLayout>
 
@@ -95,7 +91,7 @@
             android:layout_marginBottom="20dp">
 
             <ImageView
-                android:id="@+id/save"
+                android:id="@+id/share"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="5dp"
