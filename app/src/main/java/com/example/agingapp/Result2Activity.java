@@ -1,5 +1,6 @@
 package com.example.agingapp;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,6 +10,7 @@ import android.graphics.Matrix;
 import android.graphics.drawable.Drawable;
 import android.media.ExifInterface;
 import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -47,6 +49,8 @@ public class Result2Activity extends AppCompatActivity {
     String downloadFilePath2=null;
 
     String filePath=null;
+
+    int savefirst2=0;
 
 
 
@@ -99,6 +103,33 @@ public class Result2Activity extends AppCompatActivity {
             now_result.setImageBitmap(bitmap);
         }
 
+        bshare.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View view) {
+                if(savefirst2==0){
+                    Toast.makeText(Result2Activity.this,"저장 후에 공유가 가능합니다!",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    try {
+                        Intent intent = new Intent(Intent.ACTION_SEND);
+                        intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                        Uri uri = Uri.parse(filePath);
+                        intent.setType("image/*");
+
+                        intent.putExtra(Intent.EXTRA_STREAM, uri);
+                        intent.setPackage("com.kakao.talk");
+                        startActivity(intent);
+
+                    } catch (ActivityNotFoundException e) {
+                        Uri uriMarket = Uri.parse("market://deatils?id=com.kakao.talk");
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uriMarket);
+                        startActivity(intent);
+                    }
+                }
+            }
+        });
 
         bhome = (ImageView)findViewById(R.id.home);
 
@@ -114,7 +145,7 @@ public class Result2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String path="/storage/emulated/0/AgingCapture";
-
+                savefirst2=1;
                 final LinearLayout capture = (LinearLayout) findViewById(R.id.linearlayout);//캡쳐할영역(리니어레이아웃)
 
                 File file=new File(path);
