@@ -28,5 +28,10 @@
 <BR> <h3> 2- 두 번째 기능 </h3><BR> 
 <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/4.JPG" width=100%> <img src= "https://github.com/haewon13/AgingAPP/blob/master/UI/5.JPG" width=300 > <BR>
 <BR><BR>
+  
+  ### ● Web Server PHP code
+  Linux 서버에 APM 구축 뒤 APP<->서버 HTTP 프로토콜로 해당 php code를 불러서 이미지를 저장 후 변환시켰다.<BR>
+  name: updown.php 코드
+  
     
   
