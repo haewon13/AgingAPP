@@ -20,7 +20,7 @@
 - 5,6,7세의 모습과 15~19세의 모습, 총 2장의 사진을 첨부하여 변환된 모습과 실제 모습을 비교해볼 수 있는 기능<BR>
 각 기능에 대한 예시 UI를 첨부하였다.<BR>
   <BR> # Intro, Main Menu<BR><BR>
-    <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/intro.jpg" width="260" height="530">   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/main_menu.jpg" width="260" height="530">   <BR><BR>
+    <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1.jpg" ><BR>   <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/main_menu.jpg" width="260" height="530">   <BR><BR>
     <BR> # Tutorial, Input <BR><BR>
       <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/tutorial.jpg" width="260" height="530">  <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/3_1.jpg" width="260" height="530"><BR><BR>
     <BR> # Generated Output<BR><BR>
