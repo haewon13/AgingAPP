@@ -19,10 +19,11 @@
 - 5,6,7세의 사용자가 정면의 모습을 촬영하면 메인서버에서 IPCGAN을 거쳐 15~19세의 노화된 모습의 결과물을 받는 노화 카메라 기능<BR>
 - 5,6,7세의 모습과 15~19세의 모습, 총 2장의 사진을 첨부하여 변환된 모습과 실제 모습을 비교해볼 수 있는 기능<BR>
 각 기능에 대한 예시 UI를 첨부하였다.<BR><BR>
-  <BR> <h4> 1- Intro, 튜토리얼 </h4><BR><BR>
+  <BR> <h3> 1- Intro, 튜토리얼 </h3><BR><BR>
     <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/1.JPG" width=100% ><BR>   
-    <BR> <h4> 2- 첫 번째 기능 </h4><BR> 
-<img src="https://github.com/haewon13/AgingAPP/blob/master/UI/2.JPG" width=100% ><BR>  
+    <BR> <h3> 2- 첫 번째 기능 </h3><BR> 
+<img src="https://github.com/haewon13/AgingAPP/blob/master/UI/2.JPG" width=100% ><BR>
+      <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/3.JPG" width=100% ><BR>  
 
 <BR><BR>
     
