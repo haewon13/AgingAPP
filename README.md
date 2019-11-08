@@ -26,7 +26,7 @@
       <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/3.JPG" width=100% ><BR>  
       
 <BR> <h3> 2- 두 번째 기능 </h3><BR> 
-<img src="https://github.com/haewon13/AgingAPP/blob/master/UI/4.JPG" width=80% > <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/5.jpg" width=200 > <BR>
+<img src="https://github.com/haewon13/AgingAPP/blob/master/UI/4.JPG" width=70% ><img src= "https://github.com/haewon13/AgingAPP/blob/master/UI/5_1.jpg" width=200 > <BR>
 <BR><BR>
     
   
