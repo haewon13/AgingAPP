@@ -10,12 +10,6 @@
 
 [TOC]
 
-#H1 header
-##H2 header
-###H3 header
-####H4 header
-#####H5 header
-######H6 header
 
 ### ● Purpose
 현재까지 실종 아동을 찾을 수 있는 대부분의 방법은 실종 당시의 사진을 전단지나 TV매체를 통해 알리는 것이 대부분이었다. <BR>
