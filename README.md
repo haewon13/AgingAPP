@@ -14,13 +14,14 @@
 
 ### ※ 
 > 사용자가 5,6,7세 아동의 모습을 촬영하거나 사진을 첨부 하면 해당 상세정보는 메인 서버로 전송되어 16~19세의 나이대로 노화된 모습의 결과물을 생성한> 다.<BR> 
-> 해당 생성된 사진을 다시 앱으로 전송하여 사용자가 현재의 모습과 비교할 수 있고 화면 하단의 공유 버튼을 누르면 원하는 공유 수단(ex. 카카오톡)을 이용하여 사진을 전송할 수 있다.<BR><BR> 
+> 해당 생성된 사진을 다시 앱으로 전송하여 사용자가 현재의 모습과 비교할 수 있고 화면 하단의 공유 버튼을 누르면 원하는 공유 수단(ex. 카카오톡)을 이용하여 사진을 전송할 수 있다.
+  <BR><BR> 
 
 ### Demo Videos
 > `<link>`
 > 1. 최종 시연영상 -> https://www.youtube.com/watch?v=VGtunDVEt3g
 > 2. 튜토리얼 시연영상 -> https://www.youtube.com/watch?v=Mn18600nDRM
-<BR><BR>
+<BR><BR><BR>
   
 ### UI images
 > 본 어플리케이션에는 크게는 2가지 기능이 있다. <BR>
@@ -32,7 +33,7 @@
 >    <BR> <h3> 2- 첫 번째 기능 </h3><BR> 
 <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/2.JPG" width=100% ><BR>
       <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/3.JPG" width=100% ><BR>  
-      
+>      
 > <BR> <h3> 2- 두 번째 기능 </h3><BR> 
 <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/4.JPG" width=100%> <img src= "https://github.com/haewon13/AgingAPP/blob/master/UI/5.JPG" width=300 > <BR>
 <BR><BR>
