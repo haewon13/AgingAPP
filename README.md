@@ -8,6 +8,12 @@
 
 [TOC]
 
+# Purpose
+# ※
+# Demo Videos
+# UI images
+# Web Server PHP code
+
 ### ● Purpose
 현재까지 실종 아동을 찾을 수 있는 대부분의 방법은 실종 당시의 사진을 전단지나 TV매체를 통해 알리는 것이 대부분이었다. <BR>
 그러나 장기 실종자의 경우 실종 당시의 사진만으로 찾기에는 많은 어려움이 있다. 실종아동의 성장 후 모습을 예측하여 찾는 시스템이 필요하지만 
@@ -19,6 +25,7 @@
 해당 생성된 사진을 다시 앱으로 전송하여 사용자가 현재의 모습과 비교할 수 있고 화면 하단의 공유 버튼을 누르면 원하는 공유 수단(ex. 카카오톡)을 이용하여 사진을 전송할 수 있다.<BR><BR> 
 
 ### ● Demo Videos
+`<link>`
 1. 최종 시연영상 -> https://www.youtube.com/watch?v=VGtunDVEt3g
 2. 튜토리얼 시연영상 -> https://www.youtube.com/watch?v=Mn18600nDRM
 <BR><BR>
@@ -38,9 +45,9 @@
 <img src="https://github.com/haewon13/AgingAPP/blob/master/UI/4.JPG" width=100%> <img src= "https://github.com/haewon13/AgingAPP/blob/master/UI/5.JPG" width=300 > <BR>
 <BR><BR>
   
-  ### ● Web Server PHP code
-  Linux 서버에 APM 구축 뒤 APP<->서버 HTTP 프로토콜로 해당 php code를 불러서 이미지를 저장 후 변환시켰다.<BR>
-  name: updown.php 코드
+### ● Web Server PHP code
+Linux 서버에 APM 구축 뒤 APP<->서버 HTTP 프로토콜로 해당 php code를 불러서 이미지를 저장 후 변환시켰다.<BR>
+name: updown.php 코드
   
     
   <BR><BR>
