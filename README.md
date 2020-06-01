@@ -6,7 +6,7 @@
 
 ### 폴더 설명
 > - app/src/main/java/com/example/agingapp : Activity files <BR>
-> - <BR>
+> - AgingAPP/app/src/main/ : Mainfest.xml<BR>
  <BR><BR>
 
 ### Purpose
