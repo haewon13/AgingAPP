@@ -5,7 +5,7 @@
 <BR><BR>
 
 ### 폴더 설명
-> - app/src/main/java/com/example/ : Activity files <BR>
+> - app/src/main/java/com/example/agingapp : Activity files <BR>
 > - <BR>
  <BR><BR>
 
