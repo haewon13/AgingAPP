@@ -1,9 +1,13 @@
 # AgingApp
 <h2> '아이 사진관' Android Application </h2>
 <h3>/ 딥러닝 GAN 기반 실종아동의 현재 나이 이미지 생성 및 찾기 프로젝트 
-  <BR>-> Face Aging Gan기반의 아동의 나이 든 모습 생성 모바일 어플리케이션 </h3>
+  <BR> Face Aging Gan기반의 아동의 나이 든 모습 생성 모바일 어플리케이션 </h3>
 <BR><BR>
 
+### 폴더 설명
+> - app/src/main/java/com/example/ : Activity files <BR>
+> - <BR>
+ <BR><BR>
 
 ### Purpose
 > 현재까지 실종 아동을 찾을 수 있는 대부분의 방법은 실종 당시의 사진을 전단지나 TV매체를 통해 알리는 것이 대부분이었다. <BR>
