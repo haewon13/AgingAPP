@@ -5,9 +5,10 @@
 <BR><BR>
 
 ### 폴더 설명
-> - app/src/main/java/com/example/agingapp : [Activity files](https://github.com/haewon13/AgingAPP/tree/master/app/src/main/java/com/example/agingapp) <BR>
+> - app/src/main/java/com/example/agingapp : [Activity Java files](https://github.com/haewon13/AgingAPP/tree/master/app/src/main/java/com/example/agingapp) <BR>
+> - app/src/main/res/layout : [Layout xml files](https://github.com/haewon13/AgingAPP/tree/master/app/src/main/res/layout) <BR>
 > - app/src/main/ : [Mainfest file](https://github.com/haewon13/AgingAPP/blob/master/app/src/main/AndroidManifest.xml)<BR>
-> - app/src/main/res/layout : xml files
+  
  <BR><BR>
 
 ### Purpose
